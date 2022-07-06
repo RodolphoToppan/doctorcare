@@ -43,6 +43,7 @@ function activateMenuAtCurrentSection(section) {
 }
 
 function showNavOnScroll() {
+  const navigation = document.getElementById("navigation")
   if (scrollY > 0) {
     navigation.classList.add('scroll')
   } else {
@@ -75,49 +76,8 @@ const BusinessSwiper = new Swiper('.businessSwiper', {
   }
 })
 
-// Testimonials swiper
-// const swiper1 = new Swiper('.swiper-container1', {
-//   slidesPerView: 1,
-//   centeredSlides: true,
-//   watchSlidesVisibility: false,
-
-//   // If we need pagination
-//   pagination: {
-//     el: '.swiper-pagination',
-//     dynamicBullets: true,
-//     clickable: true
-//   },
-//   mousewheel: true,
-//   keyboard: true,
-//   autoplay: true,
-//   loop: true,
-
-//   breakpoints: {
-//     1024: {
-//       slidesPerView: 1,
-//       setWrapperSize: true
-//     }
-//   }
-// })
-
-// // Testimonials swiper
-// const swiper2 = new Swiper('.swiper-container2', {
-//   slidesPerView: 1,
-//   centeredSlides: true,
-
-//   mousewheel: true,
-//   keyboard: true,
-//   autoplay: true,
-
-//   breakpoints: {
-//     1024: {
-//       slidesPerView: 5,
-//       setWrapperSize: true
-//     }
-//   }
-// })
-
 function showBackToTopButtonOnScroll() {
+  const backToTopButton = document.getElementById("backToTopButton")
   if (scrollY > 550) {
     backToTopButton.classList.add('show')
   } else {
